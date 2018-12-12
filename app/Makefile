@@ -7,7 +7,7 @@ BUILD_BASE	= .build
 FW_BASE		= bin
 
 # name for the target project
-TARGET		= esp8266_iot_demo
+TARGET		= IoT_Stuff
 
 # Base directory for the compiler
 SDK_BASE	?= /home/aithinker/project/ESP8266_NONOS_SDK

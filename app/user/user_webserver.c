@@ -1007,7 +1007,7 @@ data_send(void *arg, bool responseOK, char *psend) {
 
 		if (psend) {
 			os_sprintf(httphead + os_strlen(httphead),
-					"Content-type: application/json\r\nExpires: Fri, 10 Apr 2008 14:00:00 GMT\r\nPragma: no-cache\r\n\r\n");
+					"Content-type: application/json\r\nExpires: Fri, 10 Apr 2018 14:00:00 GMT\r\nPragma: no-cache\r\n\r\n");
 			length = os_strlen(httphead) + os_strlen(psend);
 			pbuf = (char *) os_zalloc(length + 1);
 			os_memcpy(pbuf, httphead, os_strlen(httphead));
@@ -1635,6 +1635,8 @@ webserver_recv(void *arg, char *pusrdata, unsigned short length) {
 						json_parse(&js, pParseBuffer);
 
 						os_printf("rsp1:%u\n", PostCmdNeeRsp);
+
+						os_printf("test");
 						if (PostCmdNeeRsp == 0)
 							PostCmdNeeRsp = 1;
 						else

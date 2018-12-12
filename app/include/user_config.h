@@ -44,16 +44,16 @@
 //#define CLIENT_SSL_ENABLE
 //#define UPGRADE_SSL_ENABLE
 
-#define USE_DNS
+#define USE_DNS 1
 
 #ifdef USE_DNS
-#define ESP_DOMAIN      "iot.espressif.cn"
+#define ESP_DOMAIN      "114.114.114.114"
 #endif
 
-#define SOFTAP_ENCRYPT
+//#define SOFTAP_ENCRYPT
 
 #ifdef SOFTAP_ENCRYPT
-#define PASSWORD	"v+MU?zKwvVSo1"
+#define PASSWORD	"v+vVSo1MU?zKw"
 #endif
 
 #if SENSOR_DEVICE
